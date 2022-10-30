@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Movies/Create.cshtml",
+      "TargetPath": "Views\\Movies\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/saint/Desktop/MovieDataApp/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -16320,6 +16325,21 @@
     {
       "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Movies/Edit.cshtml",
+      "TargetPath": "Views\\Movies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Movies/Index.cshtml",
+      "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Movies/Delete.cshtml",
+      "TargetPath": "Views\\Movies\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16340,6 +16360,11 @@
     {
       "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/saint/Desktop/MovieDataApp/Views/Movies/Details.cshtml",
+      "TargetPath": "Views\\Movies\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -1,12 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 if(builder.Environment.IsDevelopment())
 {
-	builder.Services.AddDbContext<MvcMoviesContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("MvcMoviesContext")));
+	builder.Services.AddDbContext<MvcMovieContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("MvcMovieContext")));
 }
 else
 {
-    builder.Services.AddDbContext<MvcMovieContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcMovieContext")));
+	builder.Services.AddDbContext<MvcMovieContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcMovieContext")));
 }
 
 // Add services to the container.
