@@ -28,10 +28,10 @@ namespace MovieDataApp.Controllers
 		public async Task<IActionResult> Index(string movieGenre, string searchString)
 		// id  was used earlier instead of an searchString
 		{
-			// Use LINQ to get list of genres.
-			IQueryable<string> genreQuery = from m in _context.Movie orderby m.Genre select m.Genre;
-			
-			var movies = from m in _context.Movie select m;
+            // Use LINQ to get list of genres.
+            IQueryable<string> genreQuery = from m in _context.Movie orderby m.Genre select m.Genre;
+
+            var movies = from m in _context.Movie select m;
 			
 			if(!string.IsNullOrEmpty(searchString))
 			{
