@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/saint/Desktop/MovieDataApp/MovieDataApp.csproj": {}
+    "/home/saint/Desktop/Movie-App/MovieDataApp.csproj": {}
   },
   "projects": {
-    "/home/saint/Desktop/MovieDataApp/MovieDataApp.csproj": {
+    "/home/saint/Desktop/Movie-App/MovieDataApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/saint/Desktop/MovieDataApp/MovieDataApp.csproj",
+        "projectUniqueName": "/home/saint/Desktop/Movie-App/MovieDataApp.csproj",
         "projectName": "MovieDataApp",
-        "projectPath": "/home/saint/Desktop/MovieDataApp/MovieDataApp.csproj",
+        "projectPath": "/home/saint/Desktop/Movie-App/MovieDataApp.csproj",
         "packagesPath": "/home/saint/.nuget/packages/",
-        "outputPath": "/home/saint/Desktop/MovieDataApp/obj/",
+        "outputPath": "/home/saint/Desktop/Movie-App/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/saint/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q8qNQeDeLnylq8RL/XTyvcu597tmM9ePzQCwJsva3xVRadUD2v7p/POvSsxHNVJDtQrqmAkqq93At9uZ7AEMTg==",
+  "dgSpecHash": "Sdrpr6t2b0LUnQejW1CJMtAVctMclZcu5e9ewoPoy+eX4E5itkspLEHHKurTaLpiSjye9Lf5cW+BviJ89CmP8A==",
   "success": true,
-  "projectFilePath": "/home/saint/Desktop/MovieDataApp/MovieDataApp.csproj",
+  "projectFilePath": "/home/saint/Desktop/Movie-App/MovieDataApp.csproj",
   "expectedPackageFiles": [
     "/home/saint/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/saint/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
