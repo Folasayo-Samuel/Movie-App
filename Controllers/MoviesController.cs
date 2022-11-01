@@ -28,10 +28,10 @@ namespace MovieDataApp.Controllers
 		public async Task<IActionResult> Index(string movieGenre, string searchString)
 		// id  was used earlier instead of an searchString
 		{
-            // Use LINQ to get list of genres.
-            IQueryable<string> genreQuery = from m in _context.Movie orderby m.Genre select m.Genre;
+			// Use LINQ to get list of genres.
+			IQueryable<string> genreQuery = from m in _context.Movie orderby m.Genre select m.Genre;
 
-            var movies = from m in _context.Movie select m;
+			var movies = from m in _context.Movie select m;
 			
 			if(!string.IsNullOrEmpty(searchString))
 			{
@@ -43,13 +43,13 @@ namespace MovieDataApp.Controllers
 				movies = movies.Where(x => x.Genre == movieGenre);
 			}
 
-            var movieGenreVM = new MovieGenreViewModel
-            {
-                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
-                Movies = await movies.ToListAsync()
-            };
+			var movieGenreVM = new MovieGenreViewModel
+			{
+				Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+				Movies = await movies.ToListAsync()
+			};
 
-            return View(movieGenreVM);
+			return View(movieGenreVM);
 			//   return _context.Movie != null ? 
 			//               View(await _context.Movie.ToListAsync()) :
 			//               Problem("Entity set 'MvcMovieContext.Movie'  is null.");
@@ -84,7 +84,8 @@ namespace MovieDataApp.Controllers
 		// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
+		// ,Rating
+		public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
 		{
 			if (ModelState.IsValid)
 			{
@@ -116,6 +117,7 @@ namespace MovieDataApp.Controllers
 		// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
+		// ,Rating
 		public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
 		{
 			if (id != movie.Id)
@@ -164,10 +166,12 @@ namespace MovieDataApp.Controllers
 			return View(movie);
 		}
 
-		// POST: Movies/Delete/5
-		[HttpPost, ActionName("Delete")]
+		// POST: Movies/Delete/6
+		[HttpPost]
+		// , ActionName("Delete")
+		// DeleteConfirmed
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> DeleteConfirmed(int id)
+		public async Task<IActionResult> Delete(int id, bool notUsed)
 		{
 			if (_context.Movie == null)
 			{

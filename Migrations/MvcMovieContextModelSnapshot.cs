@@ -26,7 +26,10 @@ namespace MovieDataApp.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("decimal(18, 2)");
+
+                    // b.Property<string>("Rating")
+                    //     .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("TEXT");
@@ -36,7 +39,7 @@ namespace MovieDataApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movie");
+                    b.ToTable("Movie", (string)null);
                 });
 #pragma warning restore 612, 618
         }
